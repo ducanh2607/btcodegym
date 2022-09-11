@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+  <tr>
+    <th><caption>Caculator</caption></th>
+  </tr>
+  <tr>
+    <td colspan="2"><input type="text" id="input1"></td>
+    <td colspan="2"><input type="text" id="input2"></td>
+  </tr>
+  <tr>
+    <td><button id="sum" onclick="addition()">Addition(+)</button></td>
+    <td><button id="sub" onclick="subb()">Subtraction(-)</button></td>
+    <td><button id="multi" onclick="multi()">Multiplication(X)</button></td>
+    <td><button id="divi" onclick="divi()">Division(/)</button></td>
+  </tr>
+  <tr>
+    <td>Kết quả</td>
+    <td id="result1"></td>
+  </tr>
+</table>
+</body>
+<script>
+  function addition(){
+    let a = +document.getElementById("input1").value;
+    let b = +document.getElementById("input2").value;
+    let add = a+b;
+    document.getElementById('result1').innerHTML=add;
+
+  }
+  function subb(){
+    let a = +document.getElementById("input1").value;
+    let b = +document.getElementById("input2").value;
+    let sub = a-b;
+    document.getElementById('result1').innerHTML=sub;
+
+  }
+  function multi(){
+    let a = +document.getElementById("input1").value;
+    let b = +document.getElementById("input2").value;
+    let mul = a*b;
+    document.getElementById('result1').innerHTML=mul;
+
+  }
+  function divi(){
+    let a = +document.getElementById("input1").value;
+    let b = +document.getElementById("input2").value;
+    let div = a/b;
+    document.getElementById('result1').innerHTML=div;
+
+  }
+</script>
+</html>

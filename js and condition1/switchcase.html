@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 1-->
+<script>
+
+ let browser = prompt("Enter browser name:");
+ switch (browser){
+   case 'Edge':
+     alert("You have got the Edge!");
+     break;
+   case 'Chrome':
+   case 'Firefox':
+   case 'Safari':
+   case 'Opera':
+     alert('Okay we got these browser too');
+     break;
+   default:
+     alert('We hope this page look ok!')
+ }
+
+</script>
+<!--Bài 2-->
+<script>
+  let a = +prompt('a?', '');
+  switch (a){
+    case 0:
+      alert(0);
+      break;
+    case 1:
+      alert(1);
+      break;
+    case 2:
+    case 3:
+      alert("2,3");
+      break;
+  }
+</script>
+<!--Bài 3-->
+<script>
+  let number= +prompt('Enter a number: ');
+  let a = number ==0;
+  let b =number<0;
+  let c = number>0;
+  switch (a) {
+    case true:
+      alert(0);
+      break;
+    case false:
+      switch(b){
+          case true:
+              alert(-1);
+              break;
+
+      }
+      default:
+          switch (c){
+              case true:
+                  alert(1);
+                  break;
+          }
+
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    table{
+      border: 10px solid;
+      border-collapse: collapse;
+      border-color: lightblue;
+
+    }
+    th{
+      background-color: red;
+      color: white;
+    }
+    td{
+      color: darkorange;
+    }
+    table{
+      background-color: white;
+    }
+    div{
+      padding: 12px 12px;
+      background-color: aquamarine;
+      display: inline-block;
+    }
+  </style>
+
+</head>
+<body>
+<form method="get">
+  <table>
+    <tr>
+      <th colspan="4">SỞ THÍCH CỦA BẠN</th>
+    </tr>
+    <tr>
+      <td>Họ và tên</td>
+      <td colspan="3"><label for="youname"></label><input type="text" id="youname"></td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td colspan="2"><input type="text" id="email"><label for="email"></label> </td>
+    </tr>
+    <tr>
+      <td>Sở thích</td>
+      <td><input type="checkbox" id="sport"><label for="sport">Thể thao</label></td>
+      <td><input type="checkbox" id="music"><label for="music">Âm nhạc</label></td>
+      <td><input type="checkbox" id="readbook"><label for="readbook">Đọc sách</label></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><input type="checkbox" id="web"><label for="web">Lướt web</label></td>
+      <td><input type="checkbox" id="playgame"><label for="playgame">Chơi game</label></td>
+      <td><input type="checkbox" id="movie"><label for="movie">Điện ảnh</label></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><input type="checkbox" id="travel"><label for="travel">Du lịch</label></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><input type="submit" value="Gửi thông tin"></td>
+      <td><input type="reset" value="Nhập lai"></td>
+    </tr>
+  </table>
+</form>
+
+</body>
+</html>

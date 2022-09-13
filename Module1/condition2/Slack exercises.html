@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Test</h1>
+<label for="a">Enter number a</label>
+<input type="text" id="a"><br>
+<label for="b">Enter number b</label>
+<input type="text" id="b"><br>
+<label for="c">Enter number c</label>
+<input type="text" id="c"><br>
+<label for="year">Enter number of years</label>
+<input type="text" id="year"><br>
+<p>Perimeter and area of a square with side length a:</p>
+<p id="result"><button onclick="perimeter1()">Perimeter</button></p>
+<p id="result1"><button onclick="area1()">Area</button></p>
+<p id ="result2">a^2 <button onclick="a2()">a^2</button></p>
+<p id="result3">a^b <button onclick="ab()">a^b</button></p>
+<p >Sum of numbers from a to b:</p>
+<p id="result4"><button onclick="sum()">sum</button></p>
+<p>The century is</p>
+<p id="result5"><button onclick="century()">Century</button></p>
+<p>Tam giác</p>
+<p id="result6"><button onclick="tamgiac()">Tam giác</button></p>
+
+</body>
+<script>
+    function perimeter1() {
+        let a = document.getElementById('a').value;
+        preimeter = a*4;
+        document.getElementById('result').innerText = '' + preimeter;
+    }
+    function area1(){
+        let a = document.getElementById('a').value;
+        area = a**2;
+        document.getElementById('result1').innerText = '' + area;
+    }
+    function a2(){
+        let a = document.getElementById('a').value;
+        a22 = a**2;
+        document.getElementById('result2').innerText = '' + a22;
+    }
+    function ab() {
+        let a = document.getElementById('a').value;
+        let b = document.getElementById('b').value;
+        exp2 = a**b;
+        document.getElementById('result3').innerText = '' + exp2;
+    }
+    function sum() {
+        a = +document.getElementById('numa').value;
+        b = +document.getElementById('numb').value;
+        numnum = Math.abs(b-a) + 1;
+        sum = (b+a)*(numnum/2);
+        document.getElementById('result4').innerText = '' + sum;
+    }
+    function century() {
+        let years = document.getElementById('year').value;
+        if (years%100===0){
+            cen = parseInt(years/100);
+            document.getElementById('result5').innerText = '' + cen;
+        }
+        else{
+            cen = parseInt(years/100+1);
+            document.getElementById('result5').innerText = '' + cen;
+        }
+    }
+    function tamgiac() {
+        a = +document.getElementById('a').value;
+        b = +document.getElementById('b').value;
+        let c = +document.getElementById('c').value;
+        if (!((a+b>c) && (a+c>b) && (b+c>a))) {
+            document.getElementById('result6').innerText = 'These are not 3 sides of a triangle';
+        } else if (a===b && a===c) {
+            document.getElementById('result6').innerText = 'These are the 3 sides of an equilateral triangle';
+        } else if (a===b || a===c || b===c) {
+            document.getElementById('result6').innerText = 'These are the 3 sides of an isosceles triangle';
+        } else if ((a**2+b**2===c**2) || (a**2+c**2===b**2) || (b**2+c**2===a**2)) {
+            document.getElementById('result6').innerText = 'These are the 3 sides of a square triangle';
+        } else {
+            document.getElementById('result6').innerText = 'These are the 3 sides of the triangle';
+        }
+    }
+
+
+</script>
+</html>

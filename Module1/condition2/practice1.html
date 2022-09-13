@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bài 4-->
+<script>
+  a= +prompt("Nhập số a:")
+  b= +prompt("Nhập số b:")
+  c= +prompt("Nhập số c:")
+  if (a>b &&a>c){
+    document.write('a là số lớn nhất')
+  }else{
+    if(b>c){
+      document.write('b là số lớn nhất')
+    }else{
+      document.write('c là số lớn nhất')
+    }
+  }
+</script>
+<!--Bài 2-->
+<script>
+age= +prompt("Enter age:")
+if (age<15){
+  document.write(age)
+}
+</script>
+<!--Bài 3-->
+<script>
+  number = +prompt("Enter the age:")
+  if (number >0){
+    document.write("This number greater than 0")
+  }else{
+    if(number<0){
+      document.write("This number lower than 0")
+    }
+  }
+</script>
+<!--Bài 1-->
+<script>
+  a = +prompt("Enter number a:")
+  b = +prompt("Enter number b:")
+  if (a % b === 0 ){
+    document.write("a is divisible by b")
+  } else{
+    document.write("a isn't divisivle by b")
+  }
+</script>
+<!--Bài 5-->
+<script>
+  a = +prompt("Enter test score:")
+  b = +prompt("Enter midterm test score:")
+  c= +prompt("Enter final test score:")
+  d= (a+b+c)/3
+  if (d>=8){
+    document.write("Good")
+  }else{
+    if (d>=6.5){
+      document.write("Middling")
+    }else{
+      if (d>=5){
+        document.write("Average")
+      }
+      else{
+        document.write("Bad")
+      }
+    }
+  }
+</script>
+<!--Bài 6-->
+<script>
+  a= +prompt("Enter sales revenue")
+  if (a>=80){
+    b= a*0.25
+    document.write("Sale commision is " + b)
+  }else{
+    if(a>=60){
+      b = a*0.15
+      document.write("Sale commision is " + b)
+    }else{
+      if(a>=50){
+        b= a*0.1
+        document.write("Sale commision is " + b)
+      }else{
+        b = a*0.05
+        document.write("Sale commision is " + b)
+      }
+    }
+  }
+</script>
+<!--Bài 7-->
+<script>
+  a = +prompt("Enter the number of the phone calls: ")
+  b = a*15000
+  document.write("Your phone bill is " + b+ "VND")
+</script>
+</body>
+</html>

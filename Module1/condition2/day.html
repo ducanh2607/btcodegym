@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    #inpu{
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+<h1>Kiểm tra số ngày trong tháng</h1>
+<p><input  min="1" max="12" type="number" id='inpu' placeholder="Nhập tháng"><label for="inpu"></label><button onclick="check()">Check</button></p>
+<p id="result">Đây là chỗ hiển thị kết quả</p>
+</body>
+<script>
+  function check(){
+    let a =+document.getElementById('inpu').value;
+    switch (a){
+      case 1:
+      case 3:
+      case 5:
+      case 7:
+      case 8:
+      case 10:
+      case 12:
+        document.getElementById('result').innerText = "Tháng " + a +" có 31 ngày";
+        break;
+      case 2:
+        document.getElementById('result').innerText = "Tháng " + a +" có 28 ngày";
+        break;
+      default:
+        document.getElementById('result').innerText = "Tháng " + a +" có 30 ngày";
+    }
+  }
+</script>
+</html>

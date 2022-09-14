@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p><input type="text" id="temperature" placeholder="Enter temperature(C)"><label for="temperature"></label></p>
+<p id="result"><button onclick="oF()">Temperature</button></p>
+<p><input type="text" id="feet" placeholder="Enter number of metters"><label for="feet"></label></p>
+<p id="result1"><button onclick="transfeet()">Feet</button></p>
+<p><input type="text" id="square" placeholder="Enter a"><label for="square"></label></p>
+<p id="result2"><button onclick="areasquare()">Area square</button></p>
+<p><input type="text" id="short" placeholder="Enter b"><label for="short"></label></p>
+<p id="result3"><button onclick="arearectangle()">Area rectangle</button></p>
+<p id="result4"><button onclick="areatriangle()">Area square triangle</button></p>
+<p id="result5"><button onclick="firstorderequation()">First order equation</button></p>
+<p><input type="text" id="c" placeholder="Enter c"><label for="c"></label></p>
+<p id="result6"><button onclick="quadraticequations()">Quadratic equations</button></p>
+<p id="result7"><button onclick="age1()">Check age</button></p>
+<p id="result8"><button onclick="checktriangle()">Check triaangle</button></p>
+<p id="result9"><button onclick="bill()">Electric bill</button></p>
+<p id="result10"><button onclick="Tax()">Check tax</button></p>
+<p id="result11"><button onclick="profit()">Bank Profit</button></p>
+</body>
+<script>
+    function oF(){
+        let num = +document.getElementById('temperature').value;
+        document.getElementById('result').innerText= (num * 9) / 5 + 32;
+    }
+    function transfeet(){
+        let m = +document.getElementById('feet').value;
+        document.getElementById('result1').innerText = parseFloat(m * 3.2808);
+    }
+    function areasquare(){
+        let side = +document.getElementById('square').value;
+        document.getElementById('result2').innerText = side*4;
+    }
+    function arearectangle(){
+        let l = +document.getElementById('square').value;
+        let s = +document.getElementById('short').value;
+        document.getElementById('result3').innerText= l*s;
+    }
+    function areatriangle(){
+        let l = +document.getElementById('square').value;
+        let s = +document.getElementById('short').value;
+        let v = (l**2+s**2)**(1/2);
+        let p = (l+s+v)/2;
+        let h = 2*((p*(p-l)*(p-v)*(p-s))**(1/2))/v
+        document.getElementById('result4').innerText=(h*v)/2;
+    }
+    function firstorderequation(){
+        let l = +document.getElementById('square').value;
+        let s = +document.getElementById('short').value;
+        if (l!==0 && s!==0){
+            document.getElementById('result5').innerText = (b/a)*(-1);
+        } else{
+            document.getElementById('result5').innerText = 'Enter a and b different than 0';
+        }
+
+    }
+    function quadraticequations(){
+        let l = +document.getElementById('square').value;
+        let s = +document.getElementById('short').value;
+        let v = +document.getElementById('c').value;
+        if (l!==0){
+            let delta = s**2-4*l**v;
+            if (delta <0){
+                document.getElementById('result6').innerText= 'Inexperience equation';
+            }else{
+                if (delta === 0){
+                    document.getElementById('result6').innerText= 'the equation has 1 solution which is '+ s*(-1)/(2*l);
+                }else{
+                    document.getElementById('result6').innerText= 'the equation has 2 solutions that are '+ (s*(-1)+(delta**(1/2))/(2*l)) +'and '+ (s*(-1)-(delta**(1/2))/(2*l));
+                }
+            }
+
+        }else{
+            document.getElementById('result6').innerText= 'Enter a different than 0';
+        }
+    }
+    function age1(){
+        let age= +document.getElementById('square').value;
+        if (age>0 && age<120){
+            document.getElementById('result7').innerText='This is the age of person';
+        }else{
+            document.getElementById('result7').innerText='This is not human age';
+        }
+    }
+    function checktriangle(){
+        let l = +document.getElementById('square').value;
+        let s = +document.getElementById('short').value;
+        let v = +document.getElementById('c').value;
+        if (l+s>v&&l+v>s&&v+s>l){
+            document.getElementById('result8').innerText='this is the 3 sides of the triangle';
+        }else{
+            document.getElementById('result8').innerText='this is not the 3 sides of the triangle';
+        }
+    }
+    function bill(){
+        let l = +document.getElementById('square').value;
+        document.getElementById('result9').innerText = l*15000 + 'VND';
+    }
+    function Tax(){
+        let l = +document.getElementById('square').value;
+        document.getElementById('result10').innerText = l*0.2;
+
+    }
+    function profit(){
+        let l = +document.getElementById('square').value;
+        document.getElementById('result11').innerText = l*0.3;
+    }
+
+</script>
+</html>

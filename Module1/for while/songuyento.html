@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = 0
+    let count = 0
+    let data = ""
+    while (count<20) {
+        if (number < 2) {
+        } else {
+            let flag = true
+            for (let i =2; i < number;i ++){
+                if (number % i === 0) {
+                    flag = false
+                    break
+                }
+            }
+            if (flag) {
+                data += number + "<br>"
+                count++
+            }
+        }
+        number++
+    }
+    document.write(data)
+</script>
+</body>
+</html>

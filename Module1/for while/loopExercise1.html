@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h3>Bài 1</h3>
+<p><button onclick="count()">Count</button></p>
+<h3>Bài 2</h3>
+<p><button onclick="temperature()">Temperature</button></p>
+<h3>Bài 3</h3>
+<p><button onclick="fibonacci20()">20 Fibonacci</button></p>
+<h3>Bài 4</h3>
+<p><button onclick="firstFibonacci()">First fibonacci</button></p>
+<h3>Bài 5</h3>
+<button onclick="sum()">Sum of 20 fibonacci numbers</button>
+<h3>Bài 6</h3>
+<button onclick="thirtyNumber()">First 30 numbers are divisible by 7</button>
+<h3>Bài 7</h3>
+<button onclick="print1()">FizzBuzz</button>
+<h3>Bài 8</h3>
+<button onclick="guess()" id="1">Guess the number</button>
+<body>
+<script>
+  function count(){
+    for (let i=0; i<=100;i++){
+      document.write(i+' ');
+      if (i===99){
+        alert('The program has been completed');
+        break;
+      }
+    }
+  }
+  function temperature() {
+    let flag=true
+    while (flag) {
+      let i = +prompt('Enter temperature');
+      if (i > 100) {
+        alert('Decrease temperature');
+      }
+      else if(i < 20) {
+        alert('Increase temperature');
+      }else{
+        alert('Normal')
+        break;
+      }
+    }
+  }
+  function fibonacci20(){
+    let a=1;
+    let b=-1;
+    let c;
+    for (let i = 0; i < 20; i++) {
+      c = a;
+      a = a + b;
+      b = c;
+      document.write(a + ' ');
+    }
+  }
+  function firstFibonacci(){
+    let a=1;
+    let b=-1;
+    let i=0;
+    let c;
+    while (i === 0) {
+      c = a;
+      a = a + b;
+      b = c;
+      if (a !== 0 && a % 5 === 0) {
+        document.write(a);
+        i++
+      }
+    }
+  }
+  function sum(){
+    let a=1;
+    let b=-1;
+    let sum =0;
+    for (let i=0;i<20;i++){
+      let c= a;
+      a=a+b;
+      b=c;
+      sum+=a;
+    }
+    document.write(sum);
+  }
+  function thirtyNumber(){
+    let sum =0;
+    for(let i=1;i<=30;i++){
+      sum+= i*7;
+    }
+    document.write(sum);
+  }
+  function print1(){
+    for (let i=0;i<=100;i++){
+      if (i%5===0 && i%3===0){
+        document.write('FizzBuzz'+"<br>");
+      }else if(i%3===0){
+        document.write('Fizz'+"<br>");
+      }else if(i%5===0){
+        document.write('Buzz'+"<br>");
+      }else{
+        document.write(i+"<br>");
+      }
+    }
+  }
+  function guess(){
+    let num = +prompt('Enter the range to guess the number: ');
+    let num1 = Math.floor((Math.random()*num));
+    let i =0;
+    while (i<4){
+      if (i==3){
+        document.write('You have run out of guesses');
+        break;
+      }
+      let num2=+prompt('Enter the number you guessed: ')
+      if (num2==num1){
+        document.write('Correct');
+        break;
+      }
+      i++
+    }
+  }
+</script>
+</body>
+</html>

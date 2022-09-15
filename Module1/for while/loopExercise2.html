@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Bài 1</h3>
+<button onclick="fibonacci20()">20 Fibonacci</button>
+<h3>Bài 2</h3>
+<button onclick="factorial()">Factorial</button>
+<h3>Bài 3</h3>
+<button onclick="triangle()">Square triangle</button>
+<h3>Bài 4</h3>
+<button onclick="rectangle()">Rectangle</button>
+<h3>Bài 5</h3>
+<button onclick="compounding()">Coupound interest</button>
+</body>
+<script>
+  function fibonacci20(){
+    let a=1;
+    let b=-1;
+    let c;
+    for (let i = 0; i < 20; i++) {
+      c = a;
+      a = a + b;
+      b = c;
+      document.write(a + ' ');
+  }
+  }
+
+  function factorial(){
+    let a=+prompt("Enter the number: ");
+    let sum =1;
+    let i=1;
+    while (i<=a){
+      sum *=i;
+      i++;
+    }
+    document.write(sum);
+    }
+  function triangle(){
+    let data = "";
+
+    for (let i = 1; i <=5 ;i ++) {
+      for (let j = 1; j <= i; j++) {
+        data += "*";
+      }
+      data += "<br>";
+
+    }
+
+    for (let i = 5; i >=1 ;i --) {
+      for (let j = 1; j <= i; j++) {
+        data += "*";
+      }
+      data += "<br>";
+    }
+    for (let i = 1; i <=5 ;i ++) {
+      for (let j = 5 - i;j >= 1; j--){
+        data += "&ensp;";
+      }
+      for (let j = 1; j <= i; j++) {
+        data += "*";
+      }
+      data += "<br>";
+    }
+    for (let i = 5; i >=1 ;i --) {
+      for (let j = 5 - i;j >= 1; j--){
+        data += "&ensp;";
+      }
+      for (let j = 1; j <= i; j++) {
+        data += "*";
+      }
+      data += "<br>";
+    }
+    document.write(data)
+  }
+  function rectangle(){
+    let data =''
+    for (let i=1;i<=30;i++){
+      data += '*';
+    }
+    data =data + "<br>"
+    for(let i=1;i<=8;i++){
+      data += '*';
+      for (let j=1;j<=28;j++){
+        data+="&ensp;";
+      }
+      data+='*'+"<br>";
+    }
+    for (let i=1;i<=30;i++){
+      data += '*';
+    }
+    document.write(data);
+  }
+  function compounding(){
+    let money = +prompt('Enter money: ');
+    let month = +prompt('Enter month: ');
+    let interestRate =+prompt('Enter interest: ');
+    for (let i; i<=interestRate;i++){
+      money = money*(1+interestRate/100);
+    }
+    document.write(money)
+
+  }
+
+
+
+
+
+</script>
+</html>

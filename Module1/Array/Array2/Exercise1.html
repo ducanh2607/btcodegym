@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Bài 1</h3>
+<button onclick="connect1()">Connect</button>
+<p id ="result"></p>
+<h3>Bài 2</h3>
+<button onclick="fun1()">2</button>
+<p id="result1"></p>
+<h3>Bài 3</h3>
+<button onclick="fun2()">3</button>
+<p id="result2"></p>
+</body>
+<script>
+  function connect1(){
+    let x =["Red","Green","White","Black"];
+    x=x.join(",");
+    document.getElementById('result').innerText=x;}
+  function fun1(){
+      let num= prompt();
+      let str=num.toString();
+      let result =[str[0]];
+      for(let x=1; x<str.length; x++)
+      {
+          if((str[x-1]%2 === 0)&&(str[x]%2 === 0))
+          {
+              result.push('-', str[x]);
+          }
+          else
+          {
+              result.push(str[x]);
+          }
+      }
+      document.getElementById('result1').innerText=result.join('');
+  }
+  function fun2(){
+      let str = prompt('Enter text:');
+      let upper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      let lower = 'abcdefghijkmnqprstuvwxyz';
+      let re = [];
+      for (let x=0; x<str.length;x++){
+          if (upper.indexOf(str[x]) !==-1){
+              re.push(str[x].toLowerCase());
+          }else if(lower.indexOf(str[x] !==-1)){
+              re.push(str[x].toUpperCase());
+          }else{
+              re.push(str[x]);
+          }
+      }
+      document.getElementById('result2').innerText = re.join('');
+  }
+</script>
+</html>

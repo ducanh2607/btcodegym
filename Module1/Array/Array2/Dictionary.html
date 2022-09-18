@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập từ:
+  <input  type="text" id="input">
+  <button onclick="search1()">Dịch
+  </button></p>
+<div id="result3"></div>
+</body>
+<script>
+  function search1(){
+    let a = ['apple','banana','coconut'];
+    let b = ['táo', 'chuối', 'dừa'];
+    let c= document.getElementById('input').value;
+    for (let x=0; x<a.length;x++){
+      if (c==a[x]){
+        c = b[x]
+      }
+    }
+    document.getElementById('result3').innerText=c;
+  }
+</script>
+</html>

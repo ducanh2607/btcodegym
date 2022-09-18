@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Bài 1</h3>
+<button onclick="above()">1</button>
+<div id ='result'></div>
+<h3>Bài 2</h3>
+<button onclick="max1()">2</button>
+<div id ='result1'></div>
+<h3>Bài 3</h3>
+<button onclick="average()">3</button>
+<div id ='result2'></div>
+<h3>Bài 4</h3>
+<button onclick="reverse1()">4</button>
+<div id ='result3'></div>
+<h3>Bài 5</h3>
+<button onclick="negative1()">5</button>
+<div id ='result4'></div>
+<h3>Bài 6</h3>
+<button onclick="checkin()">6</button>
+<div id ='result5'></div>
+<h3>Bài 7</h3>
+<button onclick="checkinv()">7</button>
+<div id ='result6'></div>
+<h3>Bài 8</h3>
+<button onclick="decrease()">8</button>
+<div id ='result7'></div>
+<h3>Bài 9</h3>
+<button onclick="concat1()">8</button>
+<div id ='result8'></div>
+</body>
+<script>
+  function above(){
+    let a= [];
+    let count=0;
+    for (let i=0;i<10;i++){
+      a.push(+prompt("Enter the number to array: "));
+    }
+    for (let i=0;i<10;i++){
+      if (a[i]>=10){
+        count++;
+      }
+    }
+    document.getElementById('result').innerText= count;
+  }
+  function max1(){
+    let a=[];
+    let max=0;
+    for (let i=0;i<10;i++){
+      let c=+prompt('Enter the number to array: ');
+      a.push(c);
+      if (c>max){
+        max=c
+      }
+    }
+    let d= a.indexOf(max);
+    document.getElementById('result1').innerText="Max number is "+ max +" found at index "+d;
+  }
+  function average(){
+    let a=[];
+    let ave=0;
+    let b=+prompt('Enter the length of array a: ');
+    for (let i=0;i<b;i++){
+      let c = +prompt('Enter the number to array: ');
+      a.push(c);
+      ave+=c;
+    }
+    document.getElementById('result2').innerText=(ave/a.length)
+  }
+  function reverse1(){
+    let a=[];
+    let b=+prompt('Enter the length of array a: ');
+    for (let i=0;i<b;i++) {
+      let c = +prompt('Enter the number to array: ');
+      a.push(c);
+    }
+    document.getElementById('result3').innerText=a.reverse();
+  }
+  function negative1(){
+    let a=[];
+    let count = 0
+    let b=+prompt('Enter the length of array a: ');
+    for (let i=0;i<b;i++) {
+      let c = +prompt('Enter the number to array: ');
+      a.push(c);
+      if (c<0){
+      count++;
+      }
+    }
+    document.getElementById('result4').innerText=count;
+  }
+  function checkin(){
+    let a=[];
+    let b=+prompt('Enter the length of array a: ');
+    for (let i=0;i<b;i++) {
+      let c = +prompt('Enter the number to array: ');
+      a.push(c);
+    }
+    let d= +prompt("Enter th number to check: ");
+    if (a.indexOf(d)!==-1){
+      document.getElementById('result5').innerText= d +' in array';
+    }else{
+      document.getElementById('result5').innerText= d +' not in array';
+    }
+  }
+  function decrease(){
+    let a=[];
+    for (let i =0;i<10;i++){
+      a.push(+prompt("Enter the number to array: "))
+    }
+    a = a.sort(function(b,c){ return c - b});
+    document.getElementById('result7').innerText = a;
+  }
+  function concat1(){
+      let a=[1,2,3,4,5,6,7,8,9,10];
+      let b=[10,9,8,7,6,5,4,3,2,1];
+      let c;
+      c = a.concat(b);
+      document.getElementById('result8').innerText=c;
+
+  }
+  function checkinv(){
+      let a =[];
+      for (let i=0; i<10;i++){
+          a.push(+prompt('Enter the number to array: '));
+      }
+      let v = +prompt('Enter the number to check: ');
+      if (a.indexOf(v)!==-1){
+          a.splice(a.indexOf(v),1);
+          a.push(0);
+          document.getElementById('result6').innerHTML= v +" in array"+"</br>"+a
+      } else{ document.getElementById('result6').innerText= v+ ' not in array'
+      }
+
+  }
+</script>
+</html>

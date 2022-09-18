@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Type anything slowly</h2>
+<form name="f"><textarea  id="text" name="txt" cols="40" rows="10" onkeydown="type1();" style="width: 124px; height: 348px;"></textarea>
+</form>
+</body>
+<script>
+ let a='Im good';
+ a=a.split('')
+ let n='';
+ function type1(){
+   t = document.f.txt.value;
+   j =t.length;
+   if (j>0){
+     for (let i=0;i<j;i++){
+       n+=a[i];
+       if (i==a.length){
+         document.f.txt.value='';
+         n='';
+       }
+     }
+   }
+   document.f.txt.value=n;
+   n='';
+   setTimeout("type1()",1);
+ }
+</script>
+</html>

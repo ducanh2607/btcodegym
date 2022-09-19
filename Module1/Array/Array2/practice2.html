@@ -11,6 +11,18 @@
 <h3>Bài 2</h3>
 <button onclick="reverse1()">2</button>
 <div id="result2"></div>
+<h3>Bài 3</h3>
+<button onclick="count()">3</button>
+<div id="result3"></div>
+<h3>Bài 4</h3>
+<button onclick="check1()">4</button>
+<div id="result4"></div>
+<h3>Bài 5</h3>
+<button onclick="check2()">5</button>
+<div id="result5"></div>
+<h3>Bài 6</h3>
+<button onclick="change1()">6</button>
+<div id="result6"></div>
 </body>
 <script>
     function print1(){
@@ -35,9 +47,57 @@
         for (let i=0; i<a;i++){
             b.push(prompt('Enter the element to array: '));
         }
-        document.getElementById('result2').innerHTML= b.reverse().join(',')
+        document.getElementById('result2').innerText=b.reverse().join('');
     }
+    function count(){
+        let b=[1,2,3,'a','bc',4,'d'];
+        let count1 = 0;
 
+        for (let i  =0; i<b.length;i++){
+            if (typeof b[i] === 'number'){
+                count1++;
+            }
+        }
+        document.getElementById('result3').innerText = count1;
+    }
+    function check1(){
+        let a=[1,2,3,'a','b','c'];
+        let b=['c',1,2,3,'a','b'];
+        let count =0
+        if (a.length != b.length){
+            document.getElementById('result4').innerText='a is not equal b';
+        }else{
+            for (let i=0; i<a.length;i++){
+                for(let j=0;j<b.length;j++){
+                    if(a[i]==b[j]){
+                        count++;
+                    }
+                }
+            }
+            if (count==a.length){
+                document.getElementById('result4').innerText='a is equal b';
+            }else {
+                document.getElementById('result4').innerText='a is not equal b'
+            }
+        }
+    }
+    function check2(){
+        let a= prompt("Enter the string: ");
+        document.getElementById('result5').innerText=a.length;
+    }
+    function change1(){
+        let a = +prompt("Enter the length of array: ");
+        let b = [];
+        for (let i=0;i<a;i++){
+            let c = prompt('Enter the element to array: ');
+            if (c == '-'){
+                c= '_'
+            }
+            b.push(c);
+
+        }
+        document.getElementById('result6').innerText= b;
+    }
 
 </script>
 </html>

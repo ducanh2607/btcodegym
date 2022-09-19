@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="range" min="0" max="50" step="50" id="good" onclick="good()" value="0">GOOD<br>
+<input type="range" min="0" max="50" step="50" id="cheap" onclick="cheap()" value="0">CHEAP<br>
+<input type="range" min="0" max="50" step="50" id="fast" onclick="fast()" value="0">FAST<br>
+</body>
+<script>
+  function good(){
+    let a = document.getElementById('good').value;
+    let b = document.getElementById('cheap').value;
+    let c = document.getElementById('fast').value;
+    if (a==50){
+      if (b==50){
+        document.getElementById('fast').value= 0;
+      }
+    }
+  }
+  function cheap(){
+    let a = document.getElementById('good').value;
+    let b = document.getElementById('cheap').value;
+    let c = document.getElementById('fast').value;
+    if (b==50){
+      if (c==50){
+        document.getElementById('good').value=0;
+      }
+    }
+  }
+  function fast(){
+    let a = document.getElementById('good').value;
+    let b = document.getElementById('cheap').value;
+    let c = document.getElementById('fast').value;
+    if (a==50){
+      if(c==50){
+        document.getElementById('cheap').value =0;
+      }
+    }
+  }
+</script>
+
+</html>

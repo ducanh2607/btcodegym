@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Bài 1</h3>
+<button onclick="chao()">1</button>
+<h3>Bài 2</h3>
+<p><input type="text" oninput="cong1(this.value)" onchange="cong1(this.value)" placeholder="Enter number"></p>
+<p id="outputN"></p>
+<h3>Bài 3</h3>
+<button onclick="compare()">3</button>
+<p id="output1"></p>
+<h3>Bài 4</h3>
+<button onclick="addNumbers()">4</button>
+<h3>Bài 5</h3>
+<button onclick="star()">5</button>
+<p id="output2"></p>
+</body>
+<script>
+  function chao(){
+    alert("Xin chao");
+  }
+  function cong1(num){
+    num = Number(num);
+    document.getElementById('outputN').innerText = num+1;
+  }
+  function compare(){
+    num1 = +prompt("Enter the number: ");
+    num2 = +prompt("Enter the number: ");
+    if(num1>num2){
+      alert("Number 1 greater than number 2");
+    }else{
+      document.getElementById('output1').innerText = num1+num2;
+    }
+  }
+  function addNumbers(){
+      firstNum = 4;
+      secondNum = 8;
+      result = firstNum + secondNum;
+      return result;
+  }
+  result = 0;
+  alert(result);
+  result = addNumbers();
+  alert(result)
+  function star(){
+      let a =["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+      let b = ["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Lep"];
+      let c = prompt("Enter name of star: ");
+      for (let i =0; i<a.length;i++){
+          if(c==a[i]){
+              document.getElementById('output2').innerText=b[i];
+              break;
+          }else{
+              document.getElementById('output2').innerText= "Không tìm thấy sao"
+          }
+      }
+
+  }
+</script>
+</html>

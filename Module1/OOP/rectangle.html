@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="500px" height="600px"></canvas>
+</body>
+<script>
+
+    function createRectangle(x,y,a,b){
+        this.x=x;
+        this.y=y;
+        this.a=a;
+        this.b=b;
+        let c =document.getElementById('myCanvas').getContext("2d");
+        c.beginPath();
+        c.rect(x,y,a,b)
+        c.fillStyle= "#dc1414";
+        c.fill();
+        c.closePath();
+        display(a,b);
+    }
+    function display(x,y){
+        this.x =x;
+        this.y=y;
+        document.write("Area of rectangle is "+ x*y+"<br>");
+        document.write("Perimeter of rectangle is "+(x+y)*2+"<br>");
+    }
+    let rectangle1 = new createRectangle(20,20,300,200);
+
+
+
+</script>
+</html>

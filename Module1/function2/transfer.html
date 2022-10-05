@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Convert between meters and feet</h3>
+<h4>Convert meters to feet</h4>
+<p><input type="text" placeholder="meters" id="inputM" onInput="convert(this.value)" onChange="convert(this.value)"></p>
+<p>Feet: <span id="outputM"></span></p>
+<h4>Convert feet to meters</h4>
+<p><input type="text" placeholder="feet" id="inputF" oninput="convert1(this.value)" onchange="convert1(this.value)"></p>
+<p>Meters: <span id="outputF"></span></p>
+</body>
+<script>
+  function convert(num){
+    num =parseFloat(num);
+    document.getElementById('outputM').innerHTML = num*3.279;
+  }
+  function  convert1(num){
+    num = parseFloat(num);
+    document.getElementById('outputF').innerHTML = num*0.305;
+  }
+</script>
+</html>

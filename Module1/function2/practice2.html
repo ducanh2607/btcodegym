@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function square(a){
+    let b = a**2
+    document.write(b+"<br>")
+  }
+  square(5)
+  function circle(radius){
+    let perimeter = 2*Math.PI*radius;
+    let area = Math.PI*(radius**2);
+    document.write("Perimeter of circle is: "+perimeter+"<br>"+"Area of circle is: " +area+"<br>");
+  }
+  circle(5);
+  function factorial(a){
+    let count=1;
+    for (let i=1;i<=a;i++){
+      count *=i;
+    }
+    document.write("Factorial of "+a+" is "+count+"<br>");
+  }
+  factorial(6);
+  function type(a){
+    if (typeof a == 'number'){
+      document.write('True'+"<br>");
+    }else{
+      document.write("False"+"<br>");
+    }
+  }
+  type(7);
+  function min1(a,b,c){
+    let min = a;
+    if (min > b){
+      min = b;
+    }else if(min > c){
+      min = c;
+    }
+    document.write("Min is "+min+"<br>");
+  }
+  min1(1,2,0);
+  function positiveNumber(a){
+      if (a>=0){
+            document.write("This is integer "+"<br>");
+      }else{
+          document.write("This is negative integer "+"<br>");
+      }
+  }
+  positiveNumber(-1);
+  function swap(a,b){
+      let c=a;
+      a=b;
+      b=c;
+      document.write("a = "+a+" b = "+b+"<br>");
+  }
+  swap(5,6);
+  function reverse1(a){
+      document.write(a.reverse()+"<br>");
+  }
+  let d= [1,2,3,4,5];
+  reverse1(d)
+  function check(a,b){
+      let count=0;
+      for (let i=0;i<b.length;i++) {
+          if (b[i] == a) {
+              count++;
+          }
+      }
+      if (count==0){
+          document.write(-1);
+      }else{
+          document.write(count);
+      }
+  }
+
+  check(0,[1,2,3,1,1]);
+
+
+</script>
+</body>
+</html>

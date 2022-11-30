@@ -11,6 +11,7 @@
 <button onclick="add1()">Add</button>
 <button onclick="display1()">Display</button>
 <div id="result"></div>
+
 </body>
 <script>
     let x=0
@@ -28,5 +29,21 @@
         }
         document.getElementById("result").innerHTML = e;
     }
+    let arr = Array(10);
+
+for (let index = 0; index < arr.length; index++) {
+   arr[index] = Math.random() * 100;
+
+}
+for (let index = 0; index < array.length; index++) {
+   for (let index1 = 0; index1 < array.length; index++) {
+        if (arr[index] > arr[index1]){
+            let temp = arr[index];
+            arr[index] = arr[index1];
+            arr[index1] = temp;
+        } 
+   }  
+}
+console.log(arr)
 </script>
 </html>

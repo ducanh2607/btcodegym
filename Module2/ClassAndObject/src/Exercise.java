@@ -74,7 +74,7 @@ public class Exercise {
     public static class  StopWatch{
         private long startTime;
         private long endTime;
-        public static final double miliSec = 1000.0;
+
         public StopWatch(long startTime, long endTime){
             this.endTime = endTime;
             this.startTime = startTime;
@@ -82,8 +82,6 @@ public class Exercise {
         public StopWatch(){
 
         }
-
-
         public long getStartTime() {
             return startTime;
         }
@@ -91,23 +89,51 @@ public class Exercise {
             return endTime;
         }
         public void start(){
-            startTime = System.nanoTime();
+            startTime = System.currentTimeMillis();
         }
+//        thời gian bắt đầu là từ năm 1/1/1970 tính bằng milisec
+
         public void end(){
-            endTime = System.nanoTime();
+            endTime = System.currentTimeMillis();
         }
-        public double getElapsedTime(){
-            return (endTime-startTime)/miliSec;
+//        thời gian kết thúc là thời gian hiện tại khi chạy hàm
+        public long getElapsedTime(){
+            return  endTime - startTime;
         }
-    }
-    public static void Watch(){
-        StopWatch watch = new StopWatch();
-        watch.start();
-        System.out.println("Start time is:" + watch.getStartTime());
-        watch.end();
-        System.out.println("End time is:" + watch.getEndTime());
-        System.out.println("Elapsed time is:" + watch.getElapsedTime());
+//        Đang là milisec muốn trả về second thì chia cho 1000 nữa
+        public void sort(){
+            int[] ints = new int[100000];
+//            Để kiểm tra xem in 1000000000 số thì mất bao lâu
+
+            for (int i = 0; i < ints.length; i++) {
+                ints[i] = (int) (Math.random() * 100000);
+//                random từ 0 đến 9999
+            }
+            for (int i = 0; i < ints.length; i++) {
+                for (int j = 0; j < ints.length; j++) {
+                    if (ints[i] < ints[j]) {
+                        int temp = ints[i];
+                        ints[i] = ints[j];
+                        ints[j] = temp;
+                    }
+                }
+            }
+            for (int i : ints) {
+                System.out.print(i + ", ");
+            }
+            System.out.println();
+
+        }
 
     }
+    public static void Watch(){
+        StopWatch stopWatch = new StopWatch();
+        stopWatch.start();
+        stopWatch.sort();
+        stopWatch.end();
+        System.out.println("Thời gian chạy của phương thức sort là: " + stopWatch.getElapsedTime());
+
+    }
+    
 
 }

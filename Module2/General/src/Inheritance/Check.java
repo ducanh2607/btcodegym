@@ -1,5 +1,7 @@
 package Inheritance;
 
+import java.util.Scanner;
+
 public class Check {
     public static void main(String[] args) {
         Shape shape = new Shape();
@@ -43,7 +45,21 @@ public class Check {
         System.out.println("---------------------");
         Point3D point3D = new Point3D(1.0f,2.0f,3.0f);
         System.out.println(point3D);
-
-
+        System.out.println("---------------------");
+        Point point = new Point(1.0f,1.0f);
+        System.out.println(point);
+        System.out.println("---------------------");
+        MovablePoint movablePoint = new MovablePoint();
+        System.out.println(movablePoint);
+        System.out.println("---------------------");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter lengths of the 3 sides of the triangle: ");
+        double side1 = Double.parseDouble(scanner.nextLine());
+        double side2 = Double.parseDouble(scanner.nextLine());
+        double side3 = Double.parseDouble(scanner.nextLine());
+        System.out.println("Enter the color of the triangle: ");
+        String color = scanner.nextLine();
+        Triangle triangle = new Triangle(color, false, side1,side2,side3);
+        System.out.println(triangle);
     }
 }

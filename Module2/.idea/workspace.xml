@@ -2,7 +2,205 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4347892-e0ca-441a-8420-dec27448151c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Module1/function2/transfer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/Inheritance/MovablePoint.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/Inheritance/Point.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/Inheritance/Triangle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/arraylist/MyLinkedList$Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/arraylist/MyLinkedList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/arraylist/MyList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/arraylist/MyList1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/automatedtesting/AbsoluteNumberCalculator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/automatedtesting/FizzBuzz.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/automatedtesting/NextDayCalculator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/automatedtesting/SimpleCalculator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/automatedtesting/TriangleClassification.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/debugexception/ArrayIndexOutOfBoundsException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/debugexception/CalculationExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/debugexception/IllegalTriangleException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/debugexception/LinearEquationResolver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/debugexception/Triangle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/javacollectionframework/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/javacollectionframework/SaveListOfStudentByAge.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/javacollectionframework/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/practicejavacollection/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/practicejavacollection/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/practicejavacollection/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/practicejavacollection/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/practicejavacollection/AgeComparator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/practicejavacollection/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/practicejavacollection/PriceComparatorAsc.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/practicejavacollection/PriceComparatorDsc.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/practicejavacollection/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/practicejavacollection/ProductManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/practicejavacollection/ProductSystem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/practicejavacollection/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/practicejavacollection/out/production/practicejavacollection/practicejavacollection/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/practicejavacollection/out/production/practicejavacollection/practicejavacollection/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/practicejavacollection/out/production/practicejavacollection/practicejavacollection/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/practicejavacollection/out/production/practicejavacollection/practicejavacollection/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/practicejavacollection/out/production/practicejavacollection/practicejavacollection/practicejavacollection.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/practicejavacollection/practicejavacollection.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/searchalgorithm/BinarySearch.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/searchalgorithm/SortString.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/sortalgorithm/BubbleSort.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/sortalgorithm/BubbleSortByStep.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/sortalgorithm/InsertSort1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/sortalgorithm/InsertionSort.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/sortalgorithm/SelectionSort.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/stackqueue/CountChar.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/stackqueue/GenericStackClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/stackqueue/LinkedListQueueClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/stackqueue/MyGenericStack.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/stackqueue/MyLinkedListQueue$Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/stackqueue/MyLinkedListQueue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/production/General/stackqueue/ReverseStack.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/test/General/arraylist/MyLinkedListTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/test/General/arraylist/MyList1Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/test/General/arraylist/MyListTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/test/General/automatedtesting/AbsoluteNumberCalculatorTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/test/General/automatedtesting/FizzBuzzTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/test/General/automatedtesting/NextDayCalculatorTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/test/General/automatedtesting/SimpleCalculatorTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/test/General/automatedtesting/SimpleCalculatorTest1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/test/General/automatedtesting/TriangleClassificationTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/out/test/General/stackqueue/ReverseStackTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/Inheritance/MovablePoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/Inheritance/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/Inheritance/Triangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/arraylist/MyLinkedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/arraylist/MyList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/arraylist/MyList1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/automatedtesting/AbsoluteNumberCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/automatedtesting/FizzBuzz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/automatedtesting/NextDayCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/automatedtesting/SimpleCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/automatedtesting/TriangleClassification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/debugexception/ArrayIndexOutOfBoundsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/debugexception/CalculationExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/debugexception/IllegalTriangleException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/debugexception/LinearEquationResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/debugexception/Triangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/javacollectionframework/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/javacollectionframework/SaveListOfStudentByAge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/javacollectionframework/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/practicejavacollection/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/practicejavacollection/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/practicejavacollection/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/practicejavacollection/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/practicejavacollection/AgeComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/practicejavacollection/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/practicejavacollection/PriceComparatorAsc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/practicejavacollection/PriceComparatorDsc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/practicejavacollection/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/practicejavacollection/ProductManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/practicejavacollection/ProductSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/practicejavacollection/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/practicejavacollection/out/production/practicejavacollection/practicejavacollection/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/practicejavacollection/out/production/practicejavacollection/practicejavacollection/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/practicejavacollection/out/production/practicejavacollection/practicejavacollection/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/practicejavacollection/out/production/practicejavacollection/practicejavacollection/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/practicejavacollection/out/production/practicejavacollection/practicejavacollection/AgeComparator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/practicejavacollection/out/production/practicejavacollection/practicejavacollection/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/practicejavacollection/out/production/practicejavacollection/practicejavacollection/PriceComparatorAsc.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/practicejavacollection/out/production/practicejavacollection/practicejavacollection/PriceComparatorDsc.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/practicejavacollection/out/production/practicejavacollection/practicejavacollection/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/practicejavacollection/out/production/practicejavacollection/practicejavacollection/ProductManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/practicejavacollection/out/production/practicejavacollection/practicejavacollection/ProductSystem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/practicejavacollection/out/production/practicejavacollection/practicejavacollection/Student.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/practicejavacollection/out/production/practicejavacollection/practicejavacollection/practicejavacollection.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/practicejavacollection/practicejavacollection.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/searchalgorithm/BinarySearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/searchalgorithm/SortString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/sortalgorithm/BubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/sortalgorithm/BubbleSortByStep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/sortalgorithm/InsertSort1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/sortalgorithm/InsertionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/sortalgorithm/SelectionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/stackqueue/CountChar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/stackqueue/GenericStackClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/stackqueue/LinkedListQueueClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/stackqueue/MyGenericStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/stackqueue/MyLinkedListQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/src/stackqueue/ReverseStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/test/arraylist/MyLinkedListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/test/arraylist/MyList1Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/test/arraylist/MyListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/test/automatedtesting/AbsoluteNumberCalculatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/test/automatedtesting/FizzBuzzTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/test/automatedtesting/NextDayCalculatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/test/automatedtesting/SimpleCalculatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/test/automatedtesting/SimpleCalculatorTest1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/test/automatedtesting/TriangleClassificationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/General/test/stackqueue/ReverseStackTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/out/production/Mini/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/out/production/Mini/bai3/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/out/production/Mini/bai3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/out/production/Mini/bai3/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/out/production/Mini/bai3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/out/production/Mini/bai3/CrispyFlour.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/out/production/Mini/bai3/Discount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/out/production/Mini/bai3/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/out/production/Mini/bai3/Material.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/out/production/Mini/bai3/MaterialManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/out/production/Mini/bai3/MaterialSystem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/out/production/Mini/bai3/Meat.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/out/production/Mini/bai3/bai3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/out/production/Mini/book/Book.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/out/production/Mini/book/BookManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/out/production/Mini/book/BookSystem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/out/production/Mini/book/FictionBook.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/out/production/Mini/book/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/out/production/Mini/book/ProgrammingBook.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/src/bai2/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/src/bai2/FullTImeEmployee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/src/bai2/PartTimeEmployee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/src/bai3/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/src/bai3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/src/bai3/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/src/bai3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/src/bai3/CrispyFlour.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/src/bai3/Discount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/src/bai3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/src/bai3/Material.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/src/bai3/MaterialManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/src/bai3/MaterialSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/src/bai3/Meat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/src/bai3/bai3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/src/book/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/src/book/BookManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/src/book/BookSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/src/book/FictionBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/src/book/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Mini/src/book/ProgrammingBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module1/Array/Array1/practice.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Module1/Array/Array1/practice.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassAndObject/out/production/ClassAndObject/Exercise$StopWatch.class" beforeDir="false" afterPath="$PROJECT_DIR$/ClassAndObject/out/production/ClassAndObject/Exercise$StopWatch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassAndObject/out/production/ClassAndObject/Exercise.class" beforeDir="false" afterPath="$PROJECT_DIR$/ClassAndObject/out/production/ClassAndObject/Exercise.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassAndObject/out/production/ClassAndObject/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassAndObject/src/Exercise.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClassAndObject/src/Exercise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassAndObject/src/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/General/General.iml" beforeDir="false" afterPath="$PROJECT_DIR$/General/General.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/General/out/production/General/Inheritance/Check.class" beforeDir="false" afterPath="$PROJECT_DIR$/General/out/production/General/Inheritance/Check.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/General/src/Inheritance/Check.java" beforeDir="false" afterPath="$PROJECT_DIR$/General/src/Inheritance/Check.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiniTest/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiniTest/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiniTest/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiniTest/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiniTest/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiniTest/MiniTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Mini/Mini.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiniTest/out/production/MiniTest/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiniTest/out/production/MiniTest/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiniTest/out/production/MiniTest/ProductManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiniTest/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiniTest/src/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MiniTest/src/ProductManager.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,9 +220,26 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/btcodegym/Module2/General&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Module2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Module2" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -36,6 +251,14 @@
       <workItem from="1664935321820" duration="36000" />
       <workItem from="1664935440001" duration="12000" />
       <workItem from="1664940879819" duration="169000" />
+      <workItem from="1665988606010" duration="54000" />
+      <workItem from="1666538842177" duration="87000" />
+      <workItem from="1666538939950" duration="11000" />
+      <workItem from="1666539223256" duration="101000" />
+      <workItem from="1666541555671" duration="106000" />
+      <workItem from="1666574248547" duration="25000" />
+      <workItem from="1666753599143" duration="29000" />
+      <workItem from="1667187413312" duration="20000" />
     </task>
     <servers />
   </component>

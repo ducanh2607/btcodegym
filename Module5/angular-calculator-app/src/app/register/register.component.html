@@ -1,0 +1,83 @@
+<div class="container">
+  <form [formGroup]="user" (submit)="save()">
+    <table>
+      <tr>
+        <th>Email:</th>
+        <th><input type="text" placeholder="email" formControlName="email" name="email">
+          <div *ngIf="email.errors?.['required'] && (email.dirty
+              || email.touched)">
+            <div [hidden]="!user.controls.email.errors"></div>
+            <p style="color:red">Email is required</p>
+          </div>
+      </tr>
+      <tr>
+        <th>Password:</th>
+        <th><input type="password" placeholder="password" formControlName="password">
+          <div *ngIf="!user.controls.password.valid && (user.controls.password.dirty
+              || user.controls.password.touched)">
+            <div [hidden]="!user.controls.password.errors"></div>
+            <p style="color:red">Password is required</p>
+          </div>
+        </th>
+      </tr>
+      <tr>
+        <th>Confirm:</th>
+        <th><input type="password" placeholder="confirm" formControlName="confirm">
+          <div *ngIf="passwordMatchError" style="color: red">
+            Password does not match
+          </div>
+        </th>
+      </tr>
+      <tr>
+        <th>Country:</th>
+        <th>
+          <select name="country" id="country" formControlName="country">
+            <option value="A">A</option>
+            <option value="B">B</option>
+          </select>
+          <div *ngIf="!user.controls.country.valid &&(user.controls.country.dirty  || user.controls.country.touched)">
+            <div [hidden]="!user.controls.country.errors"></div>
+            <p style="color:red">Country is required</p>"></div>
+        </th>
+      </tr>
+      <tr>
+        <th>Age:</th>
+        <th><input type="number" formControlName="age">
+          <div *ngIf="!user.controls.age.valid && (user.controls.age.dirty
+              || user.controls.age.touched)">
+            <div [hidden]="!user.controls.age.errors"></div>
+            <p style="color:red">Email is required</p>
+          </div>
+        </th>
+      </tr>
+      <tr>
+        <th><label name="gender">Gender:</label></th>
+        <th>
+          <input type="radio"  value="A" name="gender" formControlName="gender">A
+          <input type="radio"  value="B" name="gender" formControlName="gender">B
+          <div *ngIf="!user.controls.gender.valid && (user.controls.gender.dirty
+              || user.controls.gender.touched)">
+            <div [hidden]="!user.controls.gender.errors"></div>
+            <p style="color:red">Gender is required</p>
+          </div>
+        </th>
+
+      </tr>
+      <tr>
+        <th>Phone:</th>
+        <th><input type="text" placeholder="phone" formControlName="phone">
+          <div *ngIf="!user.controls.phone.valid && (user.controls.phone.dirty
+              || user.controls.phone.touched)">
+            <div [hidden]="!user.controls.phone.errors"></div>
+            <p style="color:red">Phone is required</p>
+
+          </div>
+
+        </th>
+      </tr>
+      <tr>
+        <button>Save</button>
+      </tr>
+    </table>
+  </form>
+</div>

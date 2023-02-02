@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <style>
+    button {
+      margin: 10px;
+    }
+
+    table {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body onload="getAllPhone()">
+<button onclick="displayCreateForm()">Create new form</button>
+<div id="list_phone"></div>
+<div id="create" hidden>
+  <form>
+    <h1>Create form</h1>
+    <table>
+      <tr>
+        <td>Proceduce</td>
+        <td><label><input type="text" id="proceduce"></label></td>
+      </tr>
+      <tr>
+        <td>Model</td>
+        <td><label><input type="text" id="model"></label></td>
+      </tr>
+      <tr>
+        <td>Price</td>
+        <td><label><input type="text" id="price"></label></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button onclick="createPhone()">Create</button>
+        </td>
+      </tr>
+
+    </table>
+  </form>
+</div>
+<div id="update" hidden>
+  <form>
+    <h1>Update form</h1>
+    <table>
+      <tr>
+        <td>Proceduce</td>
+        <td><label><input type="text" id="proceduce1"></label></td>
+      </tr>
+      <tr>
+        <td>Model</td>
+        <td><label><input type="text" id="model1"></label></td>
+      </tr>
+      <tr>
+        <td>Price</td>
+        <td><label><input type="text" id="price1"></label></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button onclick="update()">Update</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+
+</div>
+</body>
+<script src="index.js"></script>
+</html>

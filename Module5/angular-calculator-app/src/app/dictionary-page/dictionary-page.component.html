@@ -1,0 +1,7 @@
+<h1>List word</h1>
+<table>
+  <tr>Word</tr>
+  <tr *ngFor="let word of words; index as i">
+    <td [routerLink]="['word',word.word]" >{{word.word}}</td>
+  </tr>
+</table>

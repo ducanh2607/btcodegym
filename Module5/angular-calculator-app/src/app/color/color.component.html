@@ -1,0 +1,7 @@
+<h2>Color Picker</h2>
+<div>
+  <label>Pick color</label>
+  <input  type="color" [(ngModel)]="color">
+</div>
+<p>Output:</p>
+<div class="color-preview" [style.background-color]="color"></div>

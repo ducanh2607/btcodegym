@@ -1,0 +1,13 @@
+h1 {
+    font-size: 20px;
+}
+span {
+    color: blue;
+}
+#bl , #bl1 {
+    color : black;
+    font-weight: bold;
+}
+#bl2 {
+    color: deepskyblue;
+}

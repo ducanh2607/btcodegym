@@ -1,0 +1,11 @@
+<form [formGroup]="login" (submit)="save()">
+  <div>Email:<input type="text" placeholder="email" formControlName="email" name="email"><div *ngIf="email.errors?.['required'] && (email.dirty||email.touched)"></div>
+  <div [hidden]="!email.errors" ><p  style="color:red">Email is required</p></div></div>
+  <div>Password:<input type="password" placeholder="password" formControlName="password">
+    <div *ngIf="!login.controls.password.valid && (login.controls.password.dirty
+              || login.controls.password.touched)">
+      <div [hidden]="!login.controls.password.errors"></div>
+      <p style="color:red">Password is required</p>
+    </div></div>
+  <button>Save</button>
+</form>

@@ -1,0 +1,43 @@
+<div class="container" >
+  <app-navbar></app-navbar>
+
+  <input [(ngModel)]="name"><button class="btn btn-secondary" (click)="search()">Search</button>
+  <button class="btn btn-secondary" (click)="sort()">SortAge</button>
+  <select [(ngModel)]="spe" (change)="filter()">
+    <option  *ngFor="let s of species" [ngValue]="s">{{s.name}}</option>
+  </select>
+<!--  <button (click)="filter()">Filter</button>-->
+
+
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>STT</th>
+      <th>Name</th>
+      <th>Image</th>
+      <th>Age</th>
+      <th>Quantity</th>
+      <th>Price</th>
+      <th>Species</th>
+      <th colspan="2">Action</th>
+    </tr>
+    </thead>
+    <tbody *ngFor="let a of animals">
+    <tr>
+      <td>{{a.id}}</td>
+      <td>{{a.name}}</td>
+      <td><img src="{{a.image}}" alt=""></td>
+      <td>{{a.age}}</td>
+      <td>{{a.quantity}}</td>
+      <td>{{a.price}}</td>
+      <td>{{a.species.name}}</td>
+      <td>
+        <button class="btn btn-warning" [routerLink]="['/form', a.id]">Update</button>
+      </td>
+      <td>
+        <button class="btn btn-danger" (click)="delete(a.id)">Delete</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
